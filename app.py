@@ -460,7 +460,7 @@ def render_generate_tab():
                 st.session_state.error_message = None
                 
                 # Rerun to show progress UI
-                st.experimental_rerun()
+                st.rerun()
     
     # Show generation progress if active
     if st.session_state.is_generating:
