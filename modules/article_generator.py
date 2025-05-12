@@ -120,7 +120,7 @@ def generate_article(title: str, subject: str, domain: str, permalink: str,
         # Get the Gemini client
         client = get_gemini_client()
         
-        # Generate article via API request
+        # Generate article via API request with increased max tokens
         response = client.generate_content(article_prompt, model, max_output_tokens=8192)
         
         if not response:
